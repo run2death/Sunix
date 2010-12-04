@@ -1,0 +1,15 @@
+#!/bin/bash
+# This command is a quick way to search something with google-chrome.
+# e.g. $? key word
+
+q=${1//+/%2b}
+shift
+while [ $1 ]
+do
+	q=$q+${1//+/%2b}
+	shift
+done
+google-chrome "http://www.google.com/search?q=$q" >/dev/null 2>/dev/null &
+
+# I feel lucky!
+# google-chrome "http://www.google.com/search?q=$q&btnI" >/dev/null 2>/dev/null &
