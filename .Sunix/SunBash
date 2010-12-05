@@ -1,0 +1,35 @@
+# set commands path
+if [ -d "~/.Sunix/bin" ] ; then
+PATH:=$HOME/.Sunix/bin:$PATH
+fi
+# you can execute your program just like 
+# $ myprog
+PATH=$PATH:.
+
+# functions
+# goto is a command which for shortcuts
+# e.g. $ goto www
+goto()
+{
+    eval cd \$$1
+}
+
+# some system aliases
+alias mk="make"
+alias xo="chmod a+u"
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls'
+alias ..='cd ..'
+
+# some Sunix aliases
+alias g='go'
+alias ?='about'
+alias g2='goto'
+alias cln='clean'
+
+
+# init shortcuts
+if [ -f ~/.Sunix/shortcuts ]; then
+	. ~/.Sunix/shortcuts
+fi

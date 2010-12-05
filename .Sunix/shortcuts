@@ -1,0 +1,4 @@
+# this file is used for setting shortcut to user's own file/directory
+
+export www="/var/www"
+#export sunix="$HOME/.Sunix"
