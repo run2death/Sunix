@@ -3,7 +3,7 @@ Sunix will be my own modified Linux version, and all these changes base on Ubunt
 installation:
 1. add all lines witch in bashrc into your ~/.bashrc 
 2. copy .Sunix/ directory to your ~/
-3. edit your own shortcuts in .Sunix/shortcuts
+3. edit your own shortcuts in ~/.Sunix/shortcuts
 4. "$ cd ~/.Sunix/bin" and "$ xo *"
 
 
