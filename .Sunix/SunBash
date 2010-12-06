@@ -1,6 +1,6 @@
 # set commands path
-if [ -d "~/.Sunix/bin" ] ; then
-PATH:=$HOME/.Sunix/bin:$PATH
+if [ -d "$HOME/.Sunix/bin" ] ; then
+PATH=$HOME/.Sunix/bin:$PATH
 fi
 # you can execute your program just like 
 # $ myprog
@@ -11,16 +11,19 @@ PATH=$PATH:.
 # e.g. $ goto www
 goto()
 {
-    eval cd \$$1
+	eval where=\$$1
+	if [ $where ] ; then
+		eval cd $where
+	fi
 }
 
 # some system aliases
+alias ..='cd ..'
+alias l='ls'
+alias la='ls -A'
+alias ll='ls -l'
 alias mk="make"
 alias xo="chmod a+u"
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls'
-alias ..='cd ..'
 
 # some Sunix aliases
 alias g='go'
