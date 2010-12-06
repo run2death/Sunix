@@ -1,1 +1,23 @@
 Sunix will be my own modified Linux version, and all these changes base on Ubuntu.
+
+installation:
+1. add all lines witch in bashrc into your ~/.bashrc 
+2. copy .Sunix/ directory to your ~/
+3. edit your own shortcuts in .Sunix/shortcuts
+4. "$ cd ~/.Sunix/bin" and "$ xo *"
+
+
+all commands:
+
+//system commands
+..	:	cd..
+l	:	ls
+la	:	ls -A
+ll	:	ls -l
+mk	:	make
+xo	:	chmod a+u
+//commands which is added with Sunix
+g	:	go		# open a website in google-chrome
+?	:	about	# search a string in google.com
+g2	:	goto	# switching working directory quickly
+cln	:	clean	# clean all the *~ files, etc.
