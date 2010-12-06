@@ -6,7 +6,7 @@ installation:
 3. edit your own shortcuts in ~/.Sunix/shortcuts
 4. "$ cd ~/.Sunix/bin" and "$ xo *"
 
-
+Features:
 all commands:
 
 //system commands
@@ -21,3 +21,5 @@ g	:	go		# open a website in google-chrome
 ?	:	about	# search a string in google.com
 g2	:	goto	# switching working directory quickly
 cln	:	clean	# clean all the *~ files, etc.
+
+Ps. you could execute your file just like "$ myprog" instead of "$ ./myprog"
