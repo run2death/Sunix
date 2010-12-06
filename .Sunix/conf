@@ -1,0 +1,6 @@
+# this file is configure file
+
+# your executable web browser
+export browser=firefox
+# your county language. (for command translate)
+export language=zh

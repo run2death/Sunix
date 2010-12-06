@@ -1,0 +1,17 @@
+#!/bin/bash
+# this command could be executed in two ways.
+# $ translate
+# $ translate this is a sentence or a word
+q=$1
+if [ $1 ] ; then
+    shift
+    while [ $1 ]
+    do
+	q="$q%20$1"
+	shift
+    done
+    q=${q//+/%2b}
+    curl "https://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=${q}&langpair=en%7C$language&callback=processResults" 2> /dev/null | awk -F '"' '{print $6}' 
+else
+    $browser "http://translate.google.com/#en|$language|" >/dev/null 2>/dev/null &
+fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-# This command is a quick way to open a site with google-chrome.
+# This command is a quick way to open a site with web browser.
 # e.g. $g about.me/YundongSun
 q=$1
 q=${q//+/%2b}
@@ -9,4 +9,4 @@ do
 	q=$q+${1//+/%2b}
 	shift
 done
-google-chrome $q >/dev/null 2>/dev/null &
+$browser $q >/dev/null 2>/dev/null &

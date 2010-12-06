@@ -1,6 +1,7 @@
 #!/bin/bash
 # This command can remove all the files whose name like xxx~ under current work directory.
 # You could even use some parameters like "clean txt jpg", then it will remove xxx~, xxx.txt and xxx.jpg.
+
 rm -f *~
 while [ $1 ]
 do
