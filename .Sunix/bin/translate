@@ -2,10 +2,11 @@
 # this command could be executed in two ways.
 # $ translate
 # $ translate this is a sentence or a word
-q=$1
-if [ $1 ] ; then
+q=${1//+/%2b}
+q=${1// /%20}
+if [ -n "$1" ] ; then
     shift
-    while [ $1 ]
+    while [ "$1" ]
     do
 	q="$q%20$1"
 	shift

@@ -5,6 +5,9 @@ installation:
 2. copy .Sunix/ directory to your ~/	(tips: .Sunix is a hidden directory)
 3. "$ xo ~/.Sunix/bin/*"	(before that you should restart your bash)
 
+needed:
+1. curl
+
 configuration:
 1. edit ~/.Sunix/conf as notes.
 2. edit your own shortpath in ~/.Sunix/shortpath
