@@ -7,9 +7,6 @@ fi
 if [ -d "$HOME/.Sunix/bin" ] ; then
    PATH=$HOME/.Sunix/bin:$PATH
 fi
-# you can execute your program just like 
-# $ myprog
-PATH=$PATH:.
 
 # functions
 # goto is a command which for shortcuts

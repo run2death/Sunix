@@ -1,6 +1,11 @@
-# this file is configure file
+## this file is configure file
 
-# your executable web browser
+## your executable web browser
 export browser=firefox
-# your county language. (for command translate)
+## your county language. (for command translate)
 export language=zh
+
+
+## if add . to PATH, you can execute your program just like 
+## $ myprog
+# PATH=$PATH:.
