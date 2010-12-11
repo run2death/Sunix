@@ -9,12 +9,12 @@ if [ -d "$HOME/.Sunix/bin" ] ; then
 fi
 
 # functions
-# goto is a command which for shortcuts
+# goto is a command which for shortpath
 # e.g. $ goto www
 goto()
 {
 	eval where=\$$1
-	if [ $where ] ; then
+	if [ "$where" != "" -a "$where" != "$" ] ; then
 		eval cd $where
 	fi
 }
