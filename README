@@ -13,7 +13,7 @@ $ ./install.sh
 needed:
 1. curl
 
-configuration(if first install):
+configuration(if install first time):
 1. edit ~/.Sunix/conf as notes.
 2. edit your own shortpath in ~/.Sunix/shortpath
 
