@@ -34,4 +34,4 @@ g2	:	goto	# switching working directory quickly
 cln	:	clean	# clean all the *~ files, etc.
 trs	:	translate	# translate a english string into your langauge
 
-Ps. you could execute your file just like "$ myprog" instead of "$ ./myprog"
+Ps. you could execute your file just like "$ myprog" instead of "$ ./myprog" if you set that up.
