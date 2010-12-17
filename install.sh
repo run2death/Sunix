@@ -1,8 +1,20 @@
 #!/bin/bash
 echo checking... 
+if [ "$1" != "-neg" -a "$1" != "" ]
+then
+	echo "don't understand $1"
+	echo "install faield!"
+	exit
+fi
 if [ -z "`grep SunBash  $HOME/.bashrc`" -a ! -d ~/.Sunix ] 
 then
-    cat bashrc >> ~/.bashrc
+	if [ "$1" = "-neg" ]
+	then
+		echo "init negative mode"
+		tail -7 bashrc >> ~/.bashrc
+	else
+    	head -4 bashrc >> ~/.bashrc
+	fi
 	echo "install first time!"
 	# install
 	cp -rf .Sunix ~/

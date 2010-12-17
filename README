@@ -1,14 +1,16 @@
 Sunix will be my own modified Linux version, and all these changes base on Ubuntu.
 
 installation:
-1. add all lines which in bashrc into your ~/.bashrc 
+1. add lines which in bashrc into your ~/.bashrc (note: There're two modes in bashrc, please take one.
 2. copy .Sunix/ directory to your ~/	(tips: .Sunix is a hidden directory)
 3. "$ xo ~/.Sunix/bin/*"	(before that you should restart your bash)
 
 Or
 
 # this could also update Sunix currently
-$ ./install.sh 
+$ ./install.sh [-neg #for negative mode]
+ 
+note:If you install Sunix with negative mode, you will have to active your Sunix by typint commond 'sunix' every time when you open a new shell/tab.
 
 needed:
 1. curl
