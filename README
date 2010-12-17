@@ -10,7 +10,7 @@ Or
 # this could also update Sunix currently
 $ ./install.sh [-neg #for negative mode]
  
-note:If you install Sunix with negative mode, you will have to active your Sunix by typint commond 'sunix' every time when you open a new shell/tab.
+note:If you install Sunix with negative mode, you will have to active your Sunix by typing commond 'sunix' every time when you open a new shell/tab.
 
 needed:
 1. curl
