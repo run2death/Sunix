@@ -37,4 +37,5 @@ g2	:	goto	# switching working directory quickly
 cln	:	clean	# clean all the *~ files, etc.
 trs	:	translate	# translate a english string into your langauge
 lg	:	Login	# short for ssh, and you can also add servers into shortpath file.
+
 Ps. you could execute your file just like "$ myprog" instead of "$ ./myprog" if you set that up.
