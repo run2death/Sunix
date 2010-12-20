@@ -18,6 +18,15 @@ goto()
 		eval cd $where
 	fi
 }
+# Login is not login, but a ssh command.
+# e.g. $ lg server123
+Login()
+{
+	eval where=\$$1
+	if [ "$where" != "" -a "$where" != "$" ] ; then
+		eval ssh $where
+	fi
+}
 
 # some system aliases
 alias mk="make"
@@ -31,6 +40,7 @@ alias ..='cd ..'
 alias g='go'
 alias ?='about'
 alias g2='goto'
+alias lg='Login'
 alias cln='clean'
 alias trs='translate'
 

@@ -14,6 +14,7 @@ note:If you install Sunix with negative mode, you will have to active your Sunix
 
 needed:
 1. curl
+2. ssh
 
 configuration(if install first time):
 1. edit ~/.Sunix/conf as notes.
@@ -35,5 +36,5 @@ g	:	go		# open a website in your browser
 g2	:	goto	# switching working directory quickly
 cln	:	clean	# clean all the *~ files, etc.
 trs	:	translate	# translate a english string into your langauge
-
+lg	:	Login	# short for ssh, and you can also add servers into shortpath file.
 Ps. you could execute your file just like "$ myprog" instead of "$ ./myprog" if you set that up.

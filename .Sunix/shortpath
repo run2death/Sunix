@@ -1,4 +1,14 @@
-# this file is used for setting shortcut to user's own file/directory
+############################################
+# this file is used for setting shortpaths #
+############################################
+
+## 1. Some exports for local path.
 
 export www="/var/www"
-#export sunix="$HOME/.Sunix"
+# export sunix="$HOME/.Sunix"
+
+
+
+## 2. Some exports for Login(ssh) command.
+
+# export server123="username@server123"
