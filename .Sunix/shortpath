@@ -11,4 +11,4 @@ export www="/var/www"
 
 ## 2. Some exports for Login(ssh) command.
 
-# export server123="username@server123"
+# export server123="username@ip.ip.ip.123"
