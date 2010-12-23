@@ -30,7 +30,7 @@ la	:	ls -A
 ll	:	ls -l
 mk	:	make
 xo	:	chmod a+u
-svim:	sudo vim
+svim	:	sudo vim
 //commands which is added with Sunix
 g	:	go		# open a website in your browser
 ?	:	about	# search a string in google.com
