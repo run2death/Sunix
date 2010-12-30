@@ -34,6 +34,7 @@ svim	:	sudo vim
 //commands which is added with Sunix
 g	:	go		# open a website in your browser
 ?	:	about	# search a string in google.com
+s~	:	sudo~	# redo your last command with sudo permission.
 g2	:	goto	# switching working directory quickly
 cln	:	clean	# clean all the *~ files, etc.
 trs	:	translate	# translate a english string into your langauge

@@ -24,8 +24,24 @@ Login()
 {
 	eval where=\$$1
 	if [ "$where" != "" -a "$where" != "$" ] ; then
-		eval ssh $where
+		passwd=\$PW$1
+		eval echo "$where\'s password: $passwd"
+		eval ssh $where	
 	fi
+}
+
+# Redo your last command with sudo permission.
+# e.g. 
+# 1.	$ rm important.txt
+# You'll be told you have not the permission to do that.
+# 2.	$ sudo~
+# Then input root's password ,it will work.
+sudo~()
+{
+	cmd=`history 2`
+	cmd=`echo "$cmd" |sed -n 1p`
+	cmd=`echo "$cmd" |sed 's/^[ 0-9\t]*/sudo /' `
+	eval $cmd
 }
 
 # some system aliases
@@ -39,6 +55,7 @@ alias svim='sudo vim'
 
 # some Sunix aliases
 alias g='go'
+alias s~='sudo~'
 alias ?='about'
 alias g2='goto'
 alias lg='Login'
