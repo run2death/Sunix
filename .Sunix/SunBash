@@ -38,10 +38,10 @@ Login()
 # Then input root's password ,it will work.
 sudo~()
 {
-	cmd=`history 2`
-	cmd=`echo "$cmd" |sed -n 1p`
-	cmd=`echo "$cmd" |sed 's/^[ 0-9\t]*/sudo /' `
-	eval $cmd
+	LASTCOMMAND=`history 2`
+	LASTCOMMAND=`echo "$LASTCOMMAND" |sed -n 1p`
+	LASTCOMMAND=`echo "$LASTCOMMAND" |sed 's/^[ 0-9\t]*/sudo /' `
+	eval $COMMAND
 }
 
 # some system aliases
