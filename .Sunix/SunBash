@@ -41,7 +41,7 @@ sudo~()
 	LASTCOMMAND=`history 2`
 	LASTCOMMAND=`echo "$LASTCOMMAND" |sed -n 1p`
 	LASTCOMMAND=`echo "$LASTCOMMAND" |sed 's/^[ 0-9\t]*/sudo /' `
-	eval $COMMAND
+	eval $LASTCOMMAND
 }
 
 # some system aliases
